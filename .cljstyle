@@ -1,0 +1,13 @@
+{:rules
+  {:functions {:enabled? false},
+   :whitespace
+     {:remove-surrounding? true,
+      :remove-trailing? true,
+      :insert-missing? true},
+   :blank-lines
+     {:max-consecutive 1
+      :padding-lines 1},
+   :namespaces
+     {:indent-size 2,
+      :break-libs? true,
+      :import-break-width 120}}}
