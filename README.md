@@ -13,6 +13,4 @@ Live demo: https://ertugrulcetin.github.io/racing-game-cljs
 
 `npm run watch`
 
-`npm run pack` (Run this in another terminal when shadow-cljs finishes compiling - You only need to run this one time)
-
 Open http://localhost:8280

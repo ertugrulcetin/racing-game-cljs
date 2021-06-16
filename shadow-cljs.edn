@@ -18,8 +18,6 @@
  :builds
  {:app
   {:target :browser
-   :js-options {:js-provider :external
-                :external-index "target/index.js"}
    :output-dir "resources/public/js/compiled"
    :asset-path "/js/compiled"
    :modules {:app {:init-fn racing-game-cljs.core/init}}
