@@ -112,12 +112,12 @@
         engine-value (if (or forward backward)
                        (* force (if (and forward (not backward)) -1 1))
                        0)
-        _ (dotimes [_ 2] (.applyEngineForce api engine-value 2))
+        _ (dotimes [_ 2] (j/call api :applyEngineForce engine-value 2))
         steering-value (if (or left right)
                          (* steer (if (and left (not right)) 1 -1))
                          0)]
-    (dotimes [s 2] (.setSteeringValue api steering-value s))
-    (dotimes [b 4] (.setBrake api (if brake max-brake 0) b))
+    (dotimes [s 2] (j/call api :setSteeringValue steering-value s))
+    (dotimes [b 4] (j/call api :setBrake (if brake max-brake 0) b))
     (when reset
       (j/call-in chassis* [:current :api :position :set] 0 0.5 0)
       (j/call-in chassis* [:current :api :velocity :set] 0 0 0)
