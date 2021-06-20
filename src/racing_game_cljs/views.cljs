@@ -1,5 +1,6 @@
 (ns racing-game-cljs.views
   (:require
+    ["regenerator-runtime"]
     ["@react-three/cannon" :refer [Physics usePlane useBox useCylinder useRaycastVehicle]]
     ["@react-three/drei" :refer [useGLTF Sky Environment PerspectiveCamera]]
     ["@react-three/fiber" :refer [Canvas useFrame]]

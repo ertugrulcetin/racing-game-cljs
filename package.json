@@ -9,6 +9,11 @@
     "pack": "npx webpack --entry /target/index.js -o resources/public/js/"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "shadow-cljs": "2.14.4",
     "webpack-cli": "^4.7.2"
   },

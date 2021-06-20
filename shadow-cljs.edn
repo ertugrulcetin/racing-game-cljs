@@ -18,8 +18,9 @@
  :builds
  {:app
   {:target :browser
-   :js-options {:js-provider :external
-                :external-index "target/index.js"}
+   :js-options {:entry-keys ["module" "browser" "main"]}
+   :compiler-options {:infer-externs :auto
+                      :output-feature-set :es6}
    :output-dir "resources/public/js/compiled"
    :asset-path "/js/compiled"
    :modules {:app {:init-fn racing-game-cljs.core/init}}
