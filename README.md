@@ -1,6 +1,6 @@
 # racing-game-cljs
 
-This project is ClojureScript clone of [pmndrs/racing-game](https://github.com/pmndrs/racing-game).
+This project is ClojureScript clone of [pmndrs/racing-game](https://github.com/pmndrs/racing-game) ([first version](https://github.com/pmndrs/racing-game/tree/939db70a076e8c95fac9643463c2d109e0bd60e6)).
 
 ![img](thumbnail.webp)
 
